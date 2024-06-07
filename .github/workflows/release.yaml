@@ -6,19 +6,17 @@ on:
     branches:
       - main
       - master
-      - 'releases/*'
     paths:
       - '**/*.tpl'
       - '**/*.py'
       - '**/*.tf'
-      - '.github/workflows/release.yaml'
+      - '.github/workflows/release.yml'
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     # Skip running release workflow on forks
-    # if: github.repository_owner == 'terraform-aws-modules'
     steps:
       - name: Checkout
         uses: actions/checkout@v3
