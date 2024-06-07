@@ -135,7 +135,7 @@ echo 'MWYyZDFlMmU2N2Rm' | base64 -d
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.0, < 5.9 |
 | <a name="requirement_helm"></a> [helm](#requirement\_helm) | >= 1.0, < 2.10.1 |
 | <a name="requirement_kubectl"></a> [kubectl](#requirement\_kubectl) | ~> 1.14.0 |
