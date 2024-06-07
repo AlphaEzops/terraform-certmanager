@@ -6,7 +6,7 @@ Terraform module for deploying Kubernetes [cert-manager](https://cert-manager.io
 
 ```bash
 module "cert_manager" {
-  source = "easy-modules/cert-manager/easy"
+  source = "https://github.com/AlphaEzops/terraform-certmanager.git"
   enabled            = true
   cluster_name       = "eks-cluster"
 
