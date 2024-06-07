@@ -9,7 +9,6 @@ on:
       - 'releases/*'
     paths:
       - '**/*.tpl'
-      - '**/*.py'
       - '**/*.tf'
       - '.github/workflows/release.yaml'
 
