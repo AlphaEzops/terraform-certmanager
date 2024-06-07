@@ -6,7 +6,7 @@ Terraform module for deploying Kubernetes [cert-manager](https://cert-manager.io
 
 ```bash
 module "cert_manager" {
-  source = "https://github.com/AlphaEzops/terraform-certmanager.git"
+  source = "git::https://github.com/AlphaEzops/terraform-certmanager.git?ref=v1.0.0"
   enabled            = true
   cluster_name       = "eks-cluster"
 
@@ -16,7 +16,7 @@ module "cert_manager" {
       namespace      = "default"
       kind           = "ClusterIssuer"
       dns_zone       = "example.com"
-      region         = "us-east-1" # data.aws_region.current.name
+      region         = "us-east-1" 
       secret_key_ref = "letsencrypt-staging"
       acme_server    = "https://acme-staging-v02.api.letsencrypt.org/directory"
       acme_email     = "your@email.com"
@@ -26,7 +26,7 @@ module "cert_manager" {
       namespace      = "default"
       kind           = "ClusterIssuer"
       dns_zone       = "example.com"
-      region         = "us-east-1" # data.aws_region.current.name
+      region         = "us-east-1"
       secret_key_ref = "letsencrypt-prod"
       acme_server    = "https://acme-v02.api.letsencrypt.org/directory"
       acme_email     = "your@email.com"
